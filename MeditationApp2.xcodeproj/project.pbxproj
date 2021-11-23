@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B301FDB6AE3AE2B14961F97B /* Pods_MeditationApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22B94C292E8415B461945E6 /* Pods_MeditationApp2.framework */; };
+		EB10F60A2680C5E200DE25C4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB10F6092680C5E100DE25C4 /* NewsViewController.swift */; };
+		EB10F60C2680C7A900DE25C4 /* NewsCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB10F60B2680C7A900DE25C4 /* NewsCustom.swift */; };
+		EB16950C2689CC630042C5AF /* FirstViewSetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB16950B2689CC630042C5AF /* FirstViewSetUpViewController.swift */; };
+		EB43812E267601100093DEF4 /* OriginalMeditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB43812D267601100093DEF4 /* OriginalMeditation.swift */; };
+		EB4633E626DE2BDA00291238 /* IndicatorSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4633E526DE2BDA00291238 /* IndicatorSetUp.swift */; };
+		EB6A3F3D26F1DBD500B669B5 /* 浜辺.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB6A3F3826F1DBD000B669B5 /* 浜辺.mp3 */; };
+		EB6A3F3E26F1DBD500B669B5 /* 川のせせらぎ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB6A3F3926F1DBD100B669B5 /* 川のせせらぎ.mp3 */; };
+		EB6A3F3F26F1DBD500B669B5 /* 森.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB6A3F3A26F1DBD200B669B5 /* 森.mp3 */; };
+		EB6A3F4026F1DBD500B669B5 /* 鳥のさえずり.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB6A3F3B26F1DBD400B669B5 /* 鳥のさえずり.mp3 */; };
+		EB6A3F4126F1DBD500B669B5 /* 雨音.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB6A3F3C26F1DBD500B669B5 /* 雨音.mp3 */; };
+		EB6C2B0D2681B1A800EA9FBD /* MediaCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C2B0B2681B1A800EA9FBD /* MediaCustomCell.swift */; };
+		EB6C2B0E2681B1A800EA9FBD /* MediaCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6C2B0C2681B1A800EA9FBD /* MediaCustomCell.xib */; };
+		EB6C2B102681D9F300EA9FBD /* LikeContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C2B0F2681D9F300EA9FBD /* LikeContents.swift */; };
+		EB6C2B142681E41A00EA9FBD /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C2B132681E41A00EA9FBD /* FavoriteViewController.swift */; };
+		EB6DAE97267B530F000CD8ED /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DAE96267B530F000CD8ED /* BaseViewController.swift */; };
+		EBA358D8267D7C8E00B493BD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA358D7267D7C8E00B493BD /* SettingViewController.swift */; };
+		EBB30B342675FD2C0072C3ED /* OriginalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB30B332675FD2C0072C3ED /* OriginalViewController.swift */; };
+		EBB30B362675FD520072C3ED /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB30B352675FD520072C3ED /* PlayerViewController.swift */; };
+		EBDB73D126808E00007D54E1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDB73D026808E00007D54E1 /* WebViewController.swift */; };
+		EBED3D372675E54F0050671A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED3D362675E54F0050671A /* AppDelegate.swift */; };
+		EBED3D392675E54F0050671A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED3D382675E54F0050671A /* SceneDelegate.swift */; };
+		EBED3D3E2675E54F0050671A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBED3D3C2675E54F0050671A /* Main.storyboard */; };
+		EBED3D402675E5500050671A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBED3D3F2675E5500050671A /* Assets.xcassets */; };
+		EBED3D432675E5500050671A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBED3D412675E5500050671A /* LaunchScreen.storyboard */; };
+		EBED3D4F2675E7600050671A /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = EBED3D4A2675E7560050671A /* 3.json */; };
+		EBED3D502675E7600050671A /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = EBED3D4B2675E7590050671A /* 1.json */; };
+		EBED3D512675E7600050671A /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = EBED3D4C2675E75B0050671A /* 2.json */; };
+		EBED3D522675E7600050671A /* 0.json in Resources */ = {isa = PBXBuildFile; fileRef = EBED3D4D2675E75E0050671A /* 0.json */; };
+		EBED3D532675E7600050671A /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = EBED3D4E2675E7600050671A /* 4.json */; };
+		EBED3D582675E7C10050671A /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED3D572675E7C10050671A /* OpeningViewController.swift */; };
+		EBED3D5A2675EBBC0050671A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED3D592675EBBC0050671A /* LoginViewController.swift */; };
+		EBED3D5C2675ECCF0050671A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBED3D5B2675ECCF0050671A /* GoogleService-Info.plist */; };
+		EBED3D5E2675F4190050671A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED3D5D2675F4190050671A /* HomeViewController.swift */; };
+		EBED3D602675F63D0050671A /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED3D5F2675F63D0050671A /* CustomNavigationBar.swift */; };
+		EBFE0E71267F653F002B9EE8 /* VideoCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFE0E70267F653F002B9EE8 /* VideoCustom.swift */; };
+		EBFE0E73267F7B4C002B9EE8 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFE0E72267F7B4C002B9EE8 /* VideoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22F845C9A3BFBE9E0D26DB54 /* Pods-MeditationApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationApp2.release.xcconfig"; path = "Target Support Files/Pods-MeditationApp2/Pods-MeditationApp2.release.xcconfig"; sourceTree = "<group>"; };
+		2419506C542DE5A955EB2FDF /* Pods-MeditationApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationApp2.debug.xcconfig"; path = "Target Support Files/Pods-MeditationApp2/Pods-MeditationApp2.debug.xcconfig"; sourceTree = "<group>"; };
+		EB10F6092680C5E100DE25C4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		EB10F60B2680C7A900DE25C4 /* NewsCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCustom.swift; sourceTree = "<group>"; };
+		EB16950B2689CC630042C5AF /* FirstViewSetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewSetUpViewController.swift; sourceTree = "<group>"; };
+		EB43812D267601100093DEF4 /* OriginalMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalMeditation.swift; sourceTree = "<group>"; };
+		EB4633E526DE2BDA00291238 /* IndicatorSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorSetUp.swift; sourceTree = "<group>"; };
+		EB6A3F3826F1DBD000B669B5 /* 浜辺.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "浜辺.mp3"; sourceTree = "<group>"; };
+		EB6A3F3926F1DBD100B669B5 /* 川のせせらぎ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "川のせせらぎ.mp3"; sourceTree = "<group>"; };
+		EB6A3F3A26F1DBD200B669B5 /* 森.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "森.mp3"; sourceTree = "<group>"; };
+		EB6A3F3B26F1DBD400B669B5 /* 鳥のさえずり.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "鳥のさえずり.mp3"; sourceTree = "<group>"; };
+		EB6A3F3C26F1DBD500B669B5 /* 雨音.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "雨音.mp3"; sourceTree = "<group>"; };
+		EB6C2B0B2681B1A800EA9FBD /* MediaCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCustomCell.swift; sourceTree = "<group>"; };
+		EB6C2B0C2681B1A800EA9FBD /* MediaCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCustomCell.xib; sourceTree = "<group>"; };
+		EB6C2B0F2681D9F300EA9FBD /* LikeContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeContents.swift; sourceTree = "<group>"; };
+		EB6C2B132681E41A00EA9FBD /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		EB6DAE96267B530F000CD8ED /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EBA358D7267D7C8E00B493BD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EBB30B332675FD2C0072C3ED /* OriginalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalViewController.swift; sourceTree = "<group>"; };
+		EBB30B352675FD520072C3ED /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		EBDB73D026808E00007D54E1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		EBED3D332675E54F0050671A /* MeditationApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBED3D362675E54F0050671A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBED3D382675E54F0050671A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBED3D3D2675E54F0050671A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBED3D3F2675E5500050671A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBED3D422675E5500050671A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBED3D442675E5500050671A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBED3D4A2675E7560050671A /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		EBED3D4B2675E7590050671A /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		EBED3D4C2675E75B0050671A /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		EBED3D4D2675E75E0050671A /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
+		EBED3D4E2675E7600050671A /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
+		EBED3D572675E7C10050671A /* OpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
+		EBED3D592675EBBC0050671A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EBED3D5B2675ECCF0050671A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EBED3D5D2675F4190050671A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EBED3D5F2675F63D0050671A /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		EBFE0E70267F653F002B9EE8 /* VideoCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCustom.swift; sourceTree = "<group>"; };
+		EBFE0E72267F7B4C002B9EE8 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		F22B94C292E8415B461945E6 /* Pods_MeditationApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeditationApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBED3D302675E54F0050671A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B301FDB6AE3AE2B14961F97B /* Pods_MeditationApp2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A3E16868EC51096A28F4A9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2419506C542DE5A955EB2FDF /* Pods-MeditationApp2.debug.xcconfig */,
+				22F845C9A3BFBE9E0D26DB54 /* Pods-MeditationApp2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB5B103EB6B9EDA674D6E708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F22B94C292E8415B461945E6 /* Pods_MeditationApp2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB4723B826805AFF0057E3AD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB6C2B0B2681B1A800EA9FBD /* MediaCustomCell.swift */,
+				EB6C2B0C2681B1A800EA9FBD /* MediaCustomCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EBED3D2A2675E54F0050671A = {
+			isa = PBXGroup;
+			children = (
+				EBED3D352675E54F0050671A /* MeditationApp2 */,
+				EBED3D342675E54F0050671A /* Products */,
+				6A3E16868EC51096A28F4A9D /* Pods */,
+				BB5B103EB6B9EDA674D6E708 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBED3D342675E54F0050671A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBED3D332675E54F0050671A /* MeditationApp2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBED3D352675E54F0050671A /* MeditationApp2 */ = {
+			isa = PBXGroup;
+			children = (
+				EBED3D362675E54F0050671A /* AppDelegate.swift */,
+				EBED3D382675E54F0050671A /* SceneDelegate.swift */,
+				EB4723B826805AFF0057E3AD /* Cell */,
+				EBED3D552675E78D0050671A /* Model */,
+				EBED3D562675E7980050671A /* View */,
+				EBED3D542675E76C0050671A /* Controller */,
+				EBED3D3C2675E54F0050671A /* Main.storyboard */,
+				EBED3D3F2675E5500050671A /* Assets.xcassets */,
+				EBED3D412675E5500050671A /* LaunchScreen.storyboard */,
+				EBED3D442675E5500050671A /* Info.plist */,
+				EBED3D5B2675ECCF0050671A /* GoogleService-Info.plist */,
+				EBED3D4D2675E75E0050671A /* 0.json */,
+				EBED3D4B2675E7590050671A /* 1.json */,
+				EBED3D4C2675E75B0050671A /* 2.json */,
+				EBED3D4A2675E7560050671A /* 3.json */,
+				EBED3D4E2675E7600050671A /* 4.json */,
+				EB6A3F3926F1DBD100B669B5 /* 川のせせらぎ.mp3 */,
+				EB6A3F3A26F1DBD200B669B5 /* 森.mp3 */,
+				EB6A3F3826F1DBD000B669B5 /* 浜辺.mp3 */,
+				EB6A3F3C26F1DBD500B669B5 /* 雨音.mp3 */,
+				EB6A3F3B26F1DBD400B669B5 /* 鳥のさえずり.mp3 */,
+			);
+			path = MeditationApp2;
+			sourceTree = "<group>";
+		};
+		EBED3D542675E76C0050671A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBED3D572675E7C10050671A /* OpeningViewController.swift */,
+				EBED3D592675EBBC0050671A /* LoginViewController.swift */,
+				EBED3D5D2675F4190050671A /* HomeViewController.swift */,
+				EBB30B332675FD2C0072C3ED /* OriginalViewController.swift */,
+				EBB30B352675FD520072C3ED /* PlayerViewController.swift */,
+				EB6DAE96267B530F000CD8ED /* BaseViewController.swift */,
+				EB10F6092680C5E100DE25C4 /* NewsViewController.swift */,
+				EBFE0E72267F7B4C002B9EE8 /* VideoViewController.swift */,
+				EBDB73D026808E00007D54E1 /* WebViewController.swift */,
+				EBA358D7267D7C8E00B493BD /* SettingViewController.swift */,
+				EB16950B2689CC630042C5AF /* FirstViewSetUpViewController.swift */,
+				EB6C2B132681E41A00EA9FBD /* FavoriteViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EBED3D552675E78D0050671A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBED3D5F2675F63D0050671A /* CustomNavigationBar.swift */,
+				EB43812D267601100093DEF4 /* OriginalMeditation.swift */,
+				EBFE0E70267F653F002B9EE8 /* VideoCustom.swift */,
+				EB10F60B2680C7A900DE25C4 /* NewsCustom.swift */,
+				EB6C2B0F2681D9F300EA9FBD /* LikeContents.swift */,
+				EB4633E526DE2BDA00291238 /* IndicatorSetUp.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBED3D562675E7980050671A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBED3D322675E54F0050671A /* MeditationApp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBED3D472675E5500050671A /* Build configuration list for PBXNativeTarget "MeditationApp2" */;
+			buildPhases = (
+				A1481C434CDEE593FDF4197D /* [CP] Check Pods Manifest.lock */,
+				EBED3D2F2675E54F0050671A /* Sources */,
+				EBED3D302675E54F0050671A /* Frameworks */,
+				EBED3D312675E54F0050671A /* Resources */,
+				8A49C08D205F8481D04AF6B8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeditationApp2;
+			productName = MeditationApp2;
+			productReference = EBED3D332675E54F0050671A /* MeditationApp2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBED3D2B2675E54F0050671A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EBED3D322675E54F0050671A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = EBED3D2E2675E54F0050671A /* Build configuration list for PBXProject "MeditationApp2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBED3D2A2675E54F0050671A;
+			productRefGroup = EBED3D342675E54F0050671A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBED3D322675E54F0050671A /* MeditationApp2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBED3D312675E54F0050671A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6A3F3F26F1DBD500B669B5 /* 森.mp3 in Resources */,
+				EBED3D502675E7600050671A /* 1.json in Resources */,
+				EBED3D432675E5500050671A /* LaunchScreen.storyboard in Resources */,
+				EB6A3F3D26F1DBD500B669B5 /* 浜辺.mp3 in Resources */,
+				EBED3D5C2675ECCF0050671A /* GoogleService-Info.plist in Resources */,
+				EBED3D532675E7600050671A /* 4.json in Resources */,
+				EBED3D512675E7600050671A /* 2.json in Resources */,
+				EB6A3F4026F1DBD500B669B5 /* 鳥のさえずり.mp3 in Resources */,
+				EBED3D4F2675E7600050671A /* 3.json in Resources */,
+				EBED3D402675E5500050671A /* Assets.xcassets in Resources */,
+				EB6A3F4126F1DBD500B669B5 /* 雨音.mp3 in Resources */,
+				EBED3D3E2675E54F0050671A /* Main.storyboard in Resources */,
+				EB6A3F3E26F1DBD500B669B5 /* 川のせせらぎ.mp3 in Resources */,
+				EBED3D522675E7600050671A /* 0.json in Resources */,
+				EB6C2B0E2681B1A800EA9FBD /* MediaCustomCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A49C08D205F8481D04AF6B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeditationApp2/Pods-MeditationApp2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeditationApp2/Pods-MeditationApp2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeditationApp2/Pods-MeditationApp2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1481C434CDEE593FDF4197D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeditationApp2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBED3D2F2675E54F0050671A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB16950C2689CC630042C5AF /* FirstViewSetUpViewController.swift in Sources */,
+				EB6C2B102681D9F300EA9FBD /* LikeContents.swift in Sources */,
+				EBB30B342675FD2C0072C3ED /* OriginalViewController.swift in Sources */,
+				EB43812E267601100093DEF4 /* OriginalMeditation.swift in Sources */,
+				EBB30B362675FD520072C3ED /* PlayerViewController.swift in Sources */,
+				EB4633E626DE2BDA00291238 /* IndicatorSetUp.swift in Sources */,
+				EBA358D8267D7C8E00B493BD /* SettingViewController.swift in Sources */,
+				EBED3D602675F63D0050671A /* CustomNavigationBar.swift in Sources */,
+				EBED3D5E2675F4190050671A /* HomeViewController.swift in Sources */,
+				EB6DAE97267B530F000CD8ED /* BaseViewController.swift in Sources */,
+				EBED3D5A2675EBBC0050671A /* LoginViewController.swift in Sources */,
+				EBFE0E73267F7B4C002B9EE8 /* VideoViewController.swift in Sources */,
+				EBED3D372675E54F0050671A /* AppDelegate.swift in Sources */,
+				EBED3D582675E7C10050671A /* OpeningViewController.swift in Sources */,
+				EB10F60C2680C7A900DE25C4 /* NewsCustom.swift in Sources */,
+				EB6C2B142681E41A00EA9FBD /* FavoriteViewController.swift in Sources */,
+				EB10F60A2680C5E200DE25C4 /* NewsViewController.swift in Sources */,
+				EBFE0E71267F653F002B9EE8 /* VideoCustom.swift in Sources */,
+				EBED3D392675E54F0050671A /* SceneDelegate.swift in Sources */,
+				EB6C2B0D2681B1A800EA9FBD /* MediaCustomCell.swift in Sources */,
+				EBDB73D126808E00007D54E1 /* WebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EBED3D3C2675E54F0050671A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBED3D3D2675E54F0050671A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBED3D412675E5500050671A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBED3D422675E5500050671A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBED3D452675E5500050671A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBED3D462675E5500050671A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBED3D482675E5500050671A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2419506C542DE5A955EB2FDF /* Pods-MeditationApp2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57KJFH699Y;
+				INFOPLIST_FILE = MeditationApp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChibaKazuki.MeditationApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EBED3D492675E5500050671A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F845C9A3BFBE9E0D26DB54 /* Pods-MeditationApp2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57KJFH699Y;
+				INFOPLIST_FILE = MeditationApp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChibaKazuki.MeditationApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBED3D2E2675E54F0050671A /* Build configuration list for PBXProject "MeditationApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBED3D452675E5500050671A /* Debug */,
+				EBED3D462675E5500050671A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBED3D472675E5500050671A /* Build configuration list for PBXNativeTarget "MeditationApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBED3D482675E5500050671A /* Debug */,
+				EBED3D492675E5500050671A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBED3D2B2675E54F0050671A /* Project object */;
+}
