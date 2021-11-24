@@ -65,13 +65,15 @@ class FirstViewSetUpViewController: UIViewController {
     }
     
     @objc func switchAction() {
-        originalMeditationSet()
-        self.tableView.reloadData()
+        
+        tableView.performBatchUpdates(nil, completion: nil)
+        self.originalMeditationSet()
         UserDefaults.standard.setValue(cellSwitch.isOn, forKey: "FirstVSetUpCell")
     }
     
     private func originalMeditationSet() {
         if cellSwitch.isOn {
+            
             let originalPath = originalMeditation[self.tableView.indexPathForSelectedRow!.row]
             let encoder = JSONEncoder()
             if let encodedData = try? encoder.encode(originalPath) {
@@ -80,7 +82,7 @@ class FirstViewSetUpViewController: UIViewController {
         } else {
             if UserDefaults.standard.object(forKey: "OriginalMeditation") == nil {
                 return
-            }
+           }
             UserDefaults.standard.removeObject(forKey: "OriginalMeditation")
         }
     }
@@ -126,8 +128,19 @@ extension FirstViewSetUpViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let cell = tableView.cellForRow(at: indexPath)
         cell?.accessoryType = .checkmark
+        
+        if UserDefaults.standard.object(forKey: "OriginalMeditation") != nil {
+            
+            UserDefaults.standard.removeObject(forKey: "OriginalMeditation")
+       }
+        let originalPath = originalMeditation[self.tableView.indexPathForSelectedRow!.row]
+        let encoder = JSONEncoder()
+        if let encodedData = try? encoder.encode(originalPath) {
+            UserDefaults.standard.setValue(encodedData, forKey: "OriginalMeditation")
+        }
         
     }
     
@@ -138,22 +151,19 @@ extension FirstViewSetUpViewController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return 40
+            return 0
         } else {
             return 20
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 0 {
-            return 43.5
-        } else {
-            if cellSwitch.isOn {
-                return 43.5
-            } else {
-                return 0
-            }
+
+        if indexPath.section == 1 {
+            
+            return cellSwitch.isOn ? 43.5 : 0.01
         }
+        return 43.5
     }
-    
+        
 }

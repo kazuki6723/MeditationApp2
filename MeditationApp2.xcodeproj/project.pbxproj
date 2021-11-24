@@ -23,6 +23,8 @@
 		EB6C2B102681D9F300EA9FBD /* LikeContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C2B0F2681D9F300EA9FBD /* LikeContents.swift */; };
 		EB6C2B142681E41A00EA9FBD /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C2B132681E41A00EA9FBD /* FavoriteViewController.swift */; };
 		EB6DAE97267B530F000CD8ED /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DAE96267B530F000CD8ED /* BaseViewController.swift */; };
+		EB7643CB274CD6A2001DAAA8 /* アラーム.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB7643CA274CD6A2001DAAA8 /* アラーム.mp3 */; };
+		EB7643CD274CD6AA001DAAA8 /* 黒電話.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB7643CC274CD6AA001DAAA8 /* 黒電話.mp3 */; };
 		EBA358D8267D7C8E00B493BD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA358D7267D7C8E00B493BD /* SettingViewController.swift */; };
 		EBB30B342675FD2C0072C3ED /* OriginalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB30B332675FD2C0072C3ED /* OriginalViewController.swift */; };
 		EBB30B362675FD520072C3ED /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB30B352675FD520072C3ED /* PlayerViewController.swift */; };
@@ -64,6 +66,8 @@
 		EB6C2B0F2681D9F300EA9FBD /* LikeContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeContents.swift; sourceTree = "<group>"; };
 		EB6C2B132681E41A00EA9FBD /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		EB6DAE96267B530F000CD8ED /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EB7643CA274CD6A2001DAAA8 /* アラーム.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "アラーム.mp3"; sourceTree = "<group>"; };
+		EB7643CC274CD6AA001DAAA8 /* 黒電話.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "黒電話.mp3"; sourceTree = "<group>"; };
 		EBA358D7267D7C8E00B493BD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EBB30B332675FD2C0072C3ED /* OriginalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalViewController.swift; sourceTree = "<group>"; };
 		EBB30B352675FD520072C3ED /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				EB6A3F3826F1DBD000B669B5 /* 浜辺.mp3 */,
 				EB6A3F3C26F1DBD500B669B5 /* 雨音.mp3 */,
 				EB6A3F3B26F1DBD400B669B5 /* 鳥のさえずり.mp3 */,
+				EB7643CA274CD6A2001DAAA8 /* アラーム.mp3 */,
+				EB7643CC274CD6AA001DAAA8 /* 黒電話.mp3 */,
 			);
 			path = MeditationApp2;
 			sourceTree = "<group>";
@@ -285,7 +291,9 @@
 				EB6A3F4126F1DBD500B669B5 /* 雨音.mp3 in Resources */,
 				EBED3D3E2675E54F0050671A /* Main.storyboard in Resources */,
 				EB6A3F3E26F1DBD500B669B5 /* 川のせせらぎ.mp3 in Resources */,
+				EB7643CB274CD6A2001DAAA8 /* アラーム.mp3 in Resources */,
 				EBED3D522675E7600050671A /* 0.json in Resources */,
+				EB7643CD274CD6AA001DAAA8 /* 黒電話.mp3 in Resources */,
 				EB6C2B0E2681B1A800EA9FBD /* MediaCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

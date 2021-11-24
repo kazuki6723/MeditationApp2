@@ -27,15 +27,15 @@ class LoginViewController: UIViewController {
     @IBAction func loginAction(_ sender: Any) {
         //匿名ログインを試みる
         Auth.auth().signInAnonymously { (result, error) in
-//            if error != nil{
-//                //アラートを表示
-//                let alert = UIAlertController(title: "ログインできません", message: "ネットワーク環境をご確認の上、時間をおいてから再度行ってください", preferredStyle: .alert)
-//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//                self.present(alert, animated: true, completion: nil)
-//                print(error.debugDescription)
-//                return
-//            }
-//            
+            if error != nil{
+                //アラートを表示
+                let alert = UIAlertController(title: "ログインできません", message: "ネットワーク環境をご確認の上、時間をおいてから再度行ってください", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                print(error.debugDescription)
+                return
+            }
+            
             //自分のIDをアプリ内に保持しておく
             UserDefaults.standard.setValue(result?.user.uid, forKey: "userID")
             
